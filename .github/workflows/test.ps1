@@ -1,0 +1,1 @@
+az ad sp create-for-rbac --name "myApp" --role contributor --scopes /subscriptions/3921210d-e971-461f-924d-000f82b73d86/resourceGroups/365_2 --sdk-auth
