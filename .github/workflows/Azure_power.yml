@@ -20,3 +20,10 @@ jobs:
         inlineScript: |
           Get-AzVM -ResourceGroupName "ResourceGroup11"
         azPSVersion: '3.1.0'
+    - name: List out directory contents
+      run: |
+          echo "Listing the contents of the GitHub workspace directory"
+          ls ${{ github.workspace }}
+
+          echo "Recursively listing all contents of the current directory"
+          ls -R
